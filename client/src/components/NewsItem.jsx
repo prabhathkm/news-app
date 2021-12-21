@@ -3,9 +3,9 @@ import React from 'react';
 const NewsItem = ({content}) => {
 
     return (
-        <div class="news-item">
-            <h3 class="title">{content.webTitle}</h3>
-            <div class="date">{content.webPublicationDate}</div>
+        <div className="news-item">
+            <h3 className="title">{content.webTitle}</h3>
+            <div className="date">{content.webPublicationDate}</div>
             <a href={content.webUrl} target="_blank">View ⧉</a>
         </div>
     );

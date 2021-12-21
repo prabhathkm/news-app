@@ -4,7 +4,7 @@ import NewsItem from "./NewsItem";
 const ResultsList = ({newsItems}) => {
 
     return (
-        <div class="search-results">
+        <div className="search-results">
             { Object.entries(newsItems).map(([index, item]) => (
                 <NewsItem content={item}/>
             )) }

@@ -15,7 +15,7 @@ const SearchPanel = ({ performSearch }) => {
     }
 
     return (
-        <div class="search-panel">
+        <div className="search-panel">
             <form onSubmit={handleSubmit}>
                 <input value={userInput} type="text" onChange={handleChange} placeholder="Search News"/>
                 <button>Search</button>

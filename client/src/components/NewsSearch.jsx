@@ -10,10 +10,10 @@ const NewsSearch = () => {
 
     const performSearch = (text) => {
         apiConnector.searchNews(text, (resp)=> {
-            if(!resp || !resp.results){
+            if(!resp || !resp.newsItems){
                 // handle invalid response
             } else {
-                setNewsItems(resp.results);
+                setNewsItems(resp.newsItems);
             }
             
         });

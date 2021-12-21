@@ -4,7 +4,7 @@ import NewsItem from "./NewsItem";
 const PinnedList = ({newsItems}) => {
 
     return (
-        <div class="pinned-news">
+        <div className="pinned-news">
             { Object.entries(newsItems).map(([index, item]) => (
                 <li><NewsItem content={item}/></li> 
             )) }
